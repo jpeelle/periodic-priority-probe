@@ -1,0 +1,77 @@
+
+%!TEX TS-program = xelatex
+
+\documentclass[letterpaper,oneside,11pt,article, portrait]{memoir}
+\usepackage[pdftitle={Scientific Paper Checklist}, pdfauthor={Jonathan Peelle}, colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{multirow}
+
+\setlrmarginsandblock{.8in}{.8in}{*}
+\setulmarginsandblock{.8in}{.8in}{*}
+
+\usepackage{array,ragged2e}
+\usepackage{fontspec,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+
+
+\definecolor{gray}{rgb}{0.6,0.6,0.6}
+\newcommand{\doi}[1]{doi:\href{http://dx.doi.org/#1}{#1}}
+
+\setsecnumdepth{section}
+
+% For tabularx columns (memman.pdf p. 233-234
+%\renewcommand{\tabularxcolumn}[1]{\centering{p{#1}}}
+
+\setromanfont{Helvetica}
+\checkandfixthelayout	% for memoir class
+
+\begin{document}
+\pagestyle{empty}
+
+
+\begin{centering}
+
+{\Large Periodic Priority Probe}
+
+\small{\url{http://github.com/jpeelle/periodic-priority-probe}}
+
+\end{centering}
+
+\vspace{.2in}
+
+\noindent \begin{tabularx}{\textwidth}{ l X l X}
+Name:& &Date:& \\
+\hline
+\end{tabularx}
+
+\vspace{.2in}
+
+\noindent {\itshape Think through all of your activities and sort them into List 1 and List 2. Use List 3 to think about what's missing, and List 4 to come up with concrete steps to change your life. Repeat at least every 6 months.}
+
+\subsection{List 1: What are the things I am doing that I would like to keep doing?}
+
+\begin{tabularx}{\textwidth}{>{\centering\small}X | >{\centering\small}X}
+Things I'd like to keep the same& Things I'd like to do more of\\
+\end{tabularx}
+
+
+\vspace{1.3in}
+
+\subsection{List 2: What are the things I am doing that I want to {\itshape stop}?}
+
+\begin{tabularx}{\textwidth}{>{\centering\small}X | >{\centering\small}X}
+Things I'd like to do less of& Things I'd like to stop completely\\
+\end{tabularx}
+
+\vspace{1.3in}
+
+\subsection{List 3: What are the things I am not doing but would like to {\itshape start}?}
+\vspace{1in} % <-- smaller on purpose --- don't add too much! You don't have time.
+
+\subsection{List 4: Over the next 6 months, what concrete steps will I take to lengthen List 1, shorten List 2, and/or move items from List 3 to List 1?}
+\small{\itshape{(Even one concrete step that actually works can make a huge difference!)}}
+%\vspace{1.5in}
+
+
+\end{document}
