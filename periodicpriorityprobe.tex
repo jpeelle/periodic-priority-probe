@@ -3,20 +3,15 @@
 
 \documentclass[letterpaper,oneside,11pt,article, portrait]{memoir}
 \usepackage[pdftitle={Scientific Paper Checklist}, pdfauthor={Jonathan Peelle}, colorlinks=true, urlcolor=blue]{hyperref}
-\usepackage{colortbl}
-\usepackage{color}
-\usepackage{multirow}
+
 
 \setlrmarginsandblock{.8in}{.8in}{*}
 \setulmarginsandblock{.8in}{.8in}{*}
 
+\usepackage{amsfonts}
 \usepackage{array,ragged2e}
 \usepackage{fontspec,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
-
-
-\definecolor{gray}{rgb}{0.6,0.6,0.6}
-\newcommand{\doi}[1]{doi:\href{http://dx.doi.org/#1}{#1}}
 
 \setsecnumdepth{section}
 
@@ -67,11 +62,12 @@ Things I'd like to do less of& Things I'd like to stop completely\\
 \vspace{1.3in}
 
 \subsection{List 3: What are the things I am not doing but would like to {\itshape start}?}
-\vspace{1in} % <-- smaller on purpose --- don't add too much! You don't have time.
+\vspace{.75in} % <-- smaller on purpose --- don't add too much! You don't have time.
 
 \subsection{List 4: Over the next 6 months, what concrete steps will I take to lengthen List 1, shorten List 2, and/or move items from List 3 to List 1?}
 \small{\itshape{(Even one concrete step that actually works can make a huge difference!)}}
-%\vspace{1.5in}
+\vspace{1.5in}
 
+\noindent $\Box$ Next periodic probe put on calendar
 
 \end{document}
